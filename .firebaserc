@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-app-c40d5": {
+      "hosting": {
+        "ac-demo": [
+          "angular-app-c40d5"
+        ]
+      }
+    }
+  }
+}
