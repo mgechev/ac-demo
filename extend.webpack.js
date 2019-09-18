@@ -1,5 +1,5 @@
 const { GuessPlugin } = require('guess-webpack');
-const { parseRoutes } = require('guess-parser');
+const { parseAngularRoutes } = require('guess-parser');
 
 module.exports = {
   plugins: [
@@ -10,7 +10,7 @@ module.exports = {
         endDate: new Date()
       },
       routeProvider() {
-        return parseRoutes('.');
+        return parseAngularRoutes('./tsconfig.app.json');
       }
     })
   ]
