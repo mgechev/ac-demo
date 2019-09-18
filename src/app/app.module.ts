@@ -6,9 +6,10 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './eager-about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, AboutComponent],
   imports: [
     BrowserModule,
     MatSidenavModule,
@@ -24,7 +25,7 @@ import { HomeComponent } from './home/home.component';
       },
       {
         path: 'about',
-        loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+        component: AboutComponent
       }
     ])
   ],
